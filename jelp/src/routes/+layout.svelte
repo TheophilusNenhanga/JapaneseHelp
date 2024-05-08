@@ -4,7 +4,7 @@
   import { Menu } from "lucide-svelte";
 </script>
 
-<div class="mx-8">
+<div class="mx-4 md:mx-8">
   <header
     class="bg-background sticky top-0 flex h-16 items-center gap-4 border-b mb-6"
   >
