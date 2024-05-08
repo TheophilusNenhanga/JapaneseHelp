@@ -9,7 +9,7 @@
     <h1 class="text-4xl">{kanji}</h1>
   </div>
   <div class="flex flex-col">
-    <h1 class="text-xl md:text-2xl">Hiragana: {hiragana}</h1>
-    <h1 class="text-xl md:text-2xl">Meaning: {meaning}</h1>
+    <h1 class=" text-lg md:text-2xl">Hiragana: {hiragana}</h1>
+    <h1 class="text-lg md:text-2xl">Meaning: {meaning}</h1>
   </div>
 </div>
