@@ -24,19 +24,3 @@ export const kanji: Kanji[] = [
   { kanji: "毎晩", meaning: "Every Night", hiragana: "まいばん" },
   { kanji: "週末", meaning: "Weekend", hiragana: "しゅうまつ" },
 ];
-
-export const numbers: Kanji[] = [
-  { kanji: "一", meaning: "one", hiragana: "いち" },
-  { kanji: "二", meaning: "two", hiragana: "に" },
-  { kanji: "三", meaning: "three", hiragana: "さん" },
-  { kanji: "四", meaning: "four", hiragana: "し" },
-  { kanji: "五", meaning: "five", hiragana: "ご" },
-  { kanji: "六", meaning: "six", hiragana: "ろく" },
-  { kanji: "七", meaning: "seven", hiragana: "しち" },
-  { kanji: "八", meaning: "eight", hiragana: "はち" },
-  { kanji: "九", meaning: "nine", hiragana: "きゅう" },
-  { kanji: "十", meaning: "ten", hiragana: "じゅう" },
-  { kanji: "百", meaning: "one hundred", hiragana: "ひゃく" },
-  { kanji: "千", meaning: "one thousand", hiragana: "せん" },
-  { kanji: "万", meaning: "ten thousand", hiragana: "まん" },
-];

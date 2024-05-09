@@ -30,6 +30,18 @@
       >
         Kanji
       </a>
+      <a
+      href="/numbers"
+      class="text-muted-foreground hover:text-foreground transition-colors"
+    >
+      Numbers
+    </a>
+    <a
+    href="/phrases"
+    class="text-muted-foreground hover:text-foreground transition-colors"
+  >
+    Phrases
+  </a>
     </nav>
     <Sheet.Root>
       <Sheet.Trigger asChild let:builder>
@@ -59,6 +71,12 @@
           <a href="/kanji" class="text-muted-foreground hover:text-foreground"
             >Kanji</a
           >
+          <a href="/numbers" class="text-muted-foreground hover:text-foreground"
+          >Numbers</a
+        >
+        <a href="/phrases" class="text-muted-foreground hover:text-foreground"
+        >Phrases</a
+      >
         </nav>
       </Sheet.Content>
     </Sheet.Root>
