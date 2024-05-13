@@ -11,7 +11,7 @@
     <nav
       class="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6"
     >
-      <span>JPNS 114 Spring 2024 :)</span>
+      <a href="/">JPNS 114 Spring 2024 :)</a>
       <a
         href="/hiragana"
         class="text-muted-foreground hover:text-foreground transition-colors"
@@ -31,17 +31,23 @@
         Kanji
       </a>
       <a
-      href="/numbers"
-      class="text-muted-foreground hover:text-foreground transition-colors"
-    >
-      Numbers
-    </a>
-    <a
-    href="/phrases"
-    class="text-muted-foreground hover:text-foreground transition-colors"
-  >
-    Phrases
-  </a>
+        href="/numbers"
+        class="text-muted-foreground hover:text-foreground transition-colors"
+      >
+        Numbers
+      </a>
+      <a
+        href="/phrases"
+        class="text-muted-foreground hover:text-foreground transition-colors"
+      >
+        Phrases
+      </a>
+      <a
+        href="/time"
+        class="text-muted-foreground hover:text-foreground transition-colors"
+      >
+        Time
+      </a>
     </nav>
     <Sheet.Root>
       <Sheet.Trigger asChild let:builder>
@@ -72,11 +78,14 @@
             >Kanji</a
           >
           <a href="/numbers" class="text-muted-foreground hover:text-foreground"
-          >Numbers</a
-        >
-        <a href="/phrases" class="text-muted-foreground hover:text-foreground"
-        >Phrases</a
-      >
+            >Numbers</a
+          >
+          <a href="/phrases" class="text-muted-foreground hover:text-foreground"
+            >Phrases</a
+          >
+          <a href="/time" class="text-muted-foreground hover:text-foreground"
+            >Time</a
+          >
         </nav>
       </Sheet.Content>
     </Sheet.Root>

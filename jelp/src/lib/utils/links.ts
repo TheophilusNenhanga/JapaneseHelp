@@ -24,4 +24,14 @@ export let links = [
     title: "フレーゼズ",
     location: "phrases",
   },
+  {
+    name: "Time",
+    title: "じ",
+    location: "time",
+  },
+  {
+    name: "Practice",
+    title: "れんしゅう",
+    location: "practice",
+  },
 ];
