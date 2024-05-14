@@ -4,8 +4,8 @@
     export let title: string;
 </script>
 
-<a href="/{location}" class="hover:shadow"
-  ><div class="border rounded p-4">
+<a href="/{location}" class="hover:shadow rounded"
+  ><div class="border rounded p-4 glass">
     <h1 class="text-2xl">{name}</h1>
     <h1 class="text-xl">{title}</h1>
   </div>

@@ -2,6 +2,7 @@
   import * as Sheet from "$lib/components/ui/sheet";
   import { Button } from "$lib/components/ui/button";
   import { Menu } from "lucide-svelte";
+  import { links } from "$lib/utils/links";
 </script>
 
 <div class="mx-4 md:mx-8">
@@ -12,42 +13,14 @@
       class="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6"
     >
       <a href="/">JPNS 114 Spring 2024 :)</a>
-      <a
-        href="/hiragana"
-        class="text-muted-foreground hover:text-foreground transition-colors"
-      >
-        Hiragana
-      </a>
-      <a
-        href="/katakana"
-        class="text-muted-foreground hover:text-foreground transition-colors"
-      >
-        Katakana
-      </a>
-      <a
-        href="/kanji"
-        class="text-muted-foreground hover:text-foreground transition-colors"
-      >
-        Kanji
-      </a>
-      <a
-        href="/numbers"
-        class="text-muted-foreground hover:text-foreground transition-colors"
-      >
-        Numbers
-      </a>
-      <a
-        href="/phrases"
-        class="text-muted-foreground hover:text-foreground transition-colors"
-      >
-        Phrases
-      </a>
-      <a
-        href="/time"
-        class="text-muted-foreground hover:text-foreground transition-colors"
-      >
-        Time
-      </a>
+      {#each links as { name, title, location }}
+        <a
+          href="/{location}"
+          class="text-muted-foreground hover:text-foreground transition-colors"
+        >
+          {name}
+        </a>
+      {/each}
     </nav>
     <Sheet.Root>
       <Sheet.Trigger asChild let:builder>
@@ -65,27 +38,14 @@
       <Sheet.Content side="left">
         <nav class="grid justify-items-start gap-6 text-lg font-medium">
           <span class="mt-6">JPNS 114 Spring 2024 :)</span>
-          <a
-            href="/hiragana"
-            class="text-muted-foreground hover:text-foreground"
-            >Hiragana
-          </a>
-          <a
-            href="/katakana"
-            class="text-muted-foreground hover:text-foreground">Katakana</a
-          >
-          <a href="/kanji" class="text-muted-foreground hover:text-foreground"
-            >Kanji</a
-          >
-          <a href="/numbers" class="text-muted-foreground hover:text-foreground"
-            >Numbers</a
-          >
-          <a href="/phrases" class="text-muted-foreground hover:text-foreground"
-            >Phrases</a
-          >
-          <a href="/time" class="text-muted-foreground hover:text-foreground"
-            >Time</a
-          >
+          {#each links as { name, title, location }}
+            <a
+              href="/{location}"
+              class="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              {name}
+            </a>
+          {/each}
         </nav>
       </Sheet.Content>
     </Sheet.Root>

@@ -1,13 +1,19 @@
 <script lang="ts">
   import type { MultipleChoiceQuestion } from "./questions";
   import Choice from "./Choice.svelte";
+  import { createEventDispatcher } from "svelte";
 
   export let question: MultipleChoiceQuestion;
   let incorrect: string[] = [];
+  const dispatch = createEventDispatcher();
 
-  function clickedChoice(event) {
+  function clickedChoice(event: any) {
     if (event.detail === question.answer) {
-      question.correct = true;
+      if (question.correct !== true){
+          question.correct = true;
+          dispatch("increment-score");
+      }
+
     } else {
       incorrect.push(event.detail);
       // This is annoying
