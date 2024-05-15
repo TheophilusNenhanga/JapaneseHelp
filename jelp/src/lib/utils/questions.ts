@@ -37,7 +37,7 @@ export const hiraganaQuestions: MultipleChoiceQuestion[] = [
       correct: null
     },
     {
-      question: "k",
+      question: "ka",
       answer: "か",
       choices: ["か", "き", "く", "け"],
       correct: null

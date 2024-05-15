@@ -34,4 +34,9 @@ export let links = [
     title: "れんしゅう",
     location: "practice",
   },
+  {
+    name: "Verbs",
+    title: "どうし",
+    location: "verbs",
+  },
 ];
